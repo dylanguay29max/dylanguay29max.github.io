@@ -9,10 +9,17 @@ html {
 body {
     color: var(--text);
     background: var(--background);
+    font-family: "Silkscreen";
 }
 
-h1 {
+li::marker {
+    color: var(--secondary)
+}
+h1,
+h2,
+h3 {
     color: var(--primary);
+    font-family: "Tourney";
 }
 
 img {
