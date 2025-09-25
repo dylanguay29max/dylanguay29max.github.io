@@ -6,6 +6,10 @@ html {
     --accent: #7c21ad;
 }
 
+* {
+    /* /* border: 1px solid red; */
+}
+
 body {
     color: var(--text);
     background: var(--background);
@@ -14,7 +18,7 @@ body {
 }
 
 li::marker {
-    color: var(--secondary)
+    color: var(--secondary);
 }
 h1 {
     color: var(--text);
@@ -25,7 +29,7 @@ h1 {
 }
     
 
-h2{ color: var(--primary);
+h2 { color: var(--primary);
     font-family: "Tourney";
     font-size: 30px;
     font-weight: 700;
@@ -45,8 +49,18 @@ img {
     border-radius: 15px;
     border: 4px inset var(--accent);
     background: var(--secondary);
+    width: 200px;
+    margin: 20px;
 }
 
 audio {
     background: var(--primary);
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    margin: 40px;
+}
+
+li {
+    border: 1px solid;
 }
