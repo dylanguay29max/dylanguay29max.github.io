@@ -115,19 +115,21 @@
       btnSubmit.addEventListener("click", () => {
         // TODO: Find which radio button is checked and display it.
         // Challenge: Include whether the user subscribed or not.
-      });
-      let lightMode = document.getElementById("lightMode")
-        if (lightMode.checked){
-          
-        }
-      let darkMode = document.getElementById("darkMode")
-        if (darkMode.checked){
+      let lightMode = document.getElementById("lightMode");
+      if (lightMode.checked) {
+      modeOutput.textContent = "Selected: Light Mode";
+      }
 
-        }
-      let systemMode = document.getElementById("systemMode")
-        if (systemMode.checked){
-          
-        }
+      let darkMode = document.getElementById("darkMode");
+      if (darkMode.checked) {
+      modeOutput.textContent = "Selected: Dark Mode";
+      }
+      
+      let systemMode = document.getElementById("systemMode");
+      if (systemMode.checked) {
+      modeOutput.textContent = "Selected: System Mode";
+      }
+    });
     </script>
   </body>
 </html>
