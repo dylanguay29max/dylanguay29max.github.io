@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>#1 What do plants breathe in?</p>
+      <label><input type="radio" name="mode" id="lightMode" value="Light"/> Oxygen</label>
+      <label><input type="radio" name="mode" id="darkMode" value="Dark"/> Carbon Dioxide</label>
+      <label
+        ><input type="radio" name="mode" id="systemMode" value="System" checked /> Air</label
+      >
+      <button id="btnSubmit">Submit</button>
+      <div class="output" id="modeOutput"></div>
+    </section>
+    <p>#2 How many elements are there in the Sun?</p>
+      <label><input type="radio" name="mode2" id="lightMode2" value="Light"/> 25</label>
+      <label><input type="radio" name="mode2" id="darkMode2" value="Dark"/> 1000</label>
+      <label
+        ><input type="radio" name="mode2" id="systemMode2" value="System" checked /> 67</label
+      >
+    
+      <button id="btnSubmit">Submit</button>
+      <div class="output" id="modeOutput"></div>
+    </section>
+    <p>#3 Which of these has the longest wavelength?</p>
+      <label><input type="radio" name="mode3" id="lightMode3" value="Light"/> Red</label>
+      <label><input type="radio" name="mode3" id="darkMode3" value="Dark"/> Violet</label>
+      <label
+        ><input type="radio" name="mode3" id="systemMode3" value="System" checked /> Blue</label
+      >
+      <button id="btnSubmit">Submit</button>
+      <div class="output" id="modeOutput"></div>
+    </section>
+    <script>
+      const btnSubmit = document.getElementById("btnSubmit");
+      const modeOutput = document.getElementById("modeOutput");
+      btnSubmit.addEventListener("click", () => {
+      
+      let lightMode = document.getElementById("lightMode");
+      if (lightMode.checked) {
+      modeOutput.textContent = "Selected: Incorrect";
+      }
+
+      let darkMode = document.getElementById("darkMode");
+      if (darkMode.checked) {
+      modeOutput.textContent = "Selected: Correct";
+      }
+      
+      let systemMode = document.getElementById("systemMode");
+      if (systemMode.checked) {
+      modeOutput.textContent = "Selected: Incorrect";
+      }
+    })
+    </script>
+</body>
+</html>
