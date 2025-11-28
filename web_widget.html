@@ -34,6 +34,7 @@
       <button id="btnSubmit3">Submit</button>
       <div class="output" id="modeOutput3"></div>
     </section>
+    <button id="resetBtn">Reset</button>
     <script>
     const btnSubmit = document.getElementById("btnSubmit");
     const modeOutput = document.getElementById("modeOutput");
@@ -96,6 +97,9 @@
       modeOutput3.textContent = "Selected: Incorrect";
       }
     });
+    </script>
+    <script>
+      resetBtn.onclick = () => location.reload();
     </script>
 </body>
 </html>
