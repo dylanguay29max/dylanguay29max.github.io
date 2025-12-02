@@ -103,13 +103,13 @@
       // Credit to ChatGPT for help with the reset button and answer key.
       resetBtn.onclick = () => location.reload();
     </script>
-    <p id="answerKey" style="font-size:10px;">Answer Key (press up arrow to make bigger): #1 Carbon Dioxide #2 67 #3 Red </p>
+    <p id="answerKey" style="font-size:0px;">Answer Key (press up arrow to make bigger): #1 Carbon Dioxide #2 67 #3 Red </p>
     <script>
       let size = 5;
       const answerKey = document.getElementById("answerKey");
       window.addEventListener("keydown", function(e) {
         if (e.key === "ArrowUp") {
-          size +=5;
+          size += 5;
           answerKey.style.fontSize = size + "px";
         }
      });
